@@ -48,6 +48,7 @@
                 </div>
                 <div class="masthead-subheading">환영합니다</div>
                 <div class="masthead-heading text-uppercase">만나서 반갑습니다</div>
+                <div class="masthead-subheading">수많은 작품을 만들면서 다양한 기술을 배워 사회에 나아가는 청년입니다.</div>
             </div>
         </header>
         <!-- About-->
@@ -56,7 +57,7 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>
                     <h3 class="section-subheading text-muted">-----------------------------</h3>
-                    <p class="text-muted">(아 도저히 멀 넣어야하는거지?)</p>
+                    <h4 class="my-3">저는 창의와 도전적으로 만드는것을 좋아합니다. 만들고싶은 것을 회로설계와 3D디자인, 코딩을 직접하여 도전 및 창작을 하는것에 희열을 느낌니다.</h4>
                 </div>
             </div>
         </section>
@@ -65,7 +66,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Skills</h2>
-                    <h3 class="section-subheading text-muted">--------------------------------------</h3>
+                    <h3 class="section-subheading text-muted">--------------------------</h3>
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
@@ -118,7 +119,7 @@
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <li class="list-inline-item"><img src="assets/img/skills/OrCad.png" width="100"></li>
+                            <li class="list-inline-item"><img src="assets/img/skills/OrCAD.png" width="100"></li>
                         </span>
                         <h4 class="my-3">OrCad</h4>
                     </div>
@@ -130,6 +131,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">project</h2>
+                    <h3 class="section-subheading text-muted">----------------------------------</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -159,6 +161,21 @@
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Simulator</div>
                                 <div class="portfolio-caption-subheading text-muted">외주를 받아서 제어 프로그램 제작</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/3DPrint.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">3D Print</div>
+                                <div class="portfolio-caption-subheading text-muted">계속 출력속도 및 품질을 위해 개조를 하는 프로젝트</div>
                             </div>
                         </div>
                     </div>
@@ -254,6 +271,41 @@
                                         <li>
                                             <strong>사용환경 :</strong>
                                             윈도우
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">3D Print</h2>
+                                    <p class="item-intro text-muted">계속 출력속도 및 품질을 위해 개조를 하는 프로젝트</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3DPrint.jpg" alt="..." />
+                                    <p>3D Print의 출력 속도, 품질을 높이기 위하여 개조를 계속 진행중입니다. 현제 펌웨어는 Klipper이고 메인 컨트롤러는 라즈베리파이를 활용하여 옥토프린터로 관리하고있습니다.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>사용툴 :</strong>
+                                            Python, 옥토프린터
+                                        </li>
+                                        <li>
+                                            <strong>사용환경 :</strong>
+                                            윈도우, 라즈비안
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
