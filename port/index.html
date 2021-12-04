@@ -147,7 +147,7 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">XPlane Radio</div>
-                                <div class="portfolio-caption-subheading text-muted">라즈베리파이를 이용해 만들었습니다.</div>
+                                <div class="portfolio-caption-subheading text-muted">비행시뮬레이션 UDP데이터를 주고받아 제어합니다.</div>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Simulator</div>
-                                <div class="portfolio-caption-subheading text-muted">지인의 회사에서 외주를 받아서 제어 프로그램 제작하였습니다.</div>
+                                <div class="portfolio-caption-subheading text-muted">회사에서 아르바이트로 제어및 관리 프로그램을 제작하였습니다.</div>
                             </div>
                         </div>
                     </div>
@@ -207,7 +207,7 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Ambient Light</div>
-                                <div class="portfolio-caption-subheading text-muted">아두이노 및 python으로  만들었습니다.</div>
+                                <div class="portfolio-caption-subheading text-muted">python으로 win32API를 사용하여 화면을 분석하여 아두이노로 LED을 제어합니다.</div>
                             </div>
                         </div>
                     </div>
@@ -259,11 +259,14 @@
                                     <p class="item-intro text-muted">라즈베리파이를 이용하여 만듬</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/x_Plane_radio_1.png" alt="..." />
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/x_Plane_radio_2.jpg" alt="..." />
-                                    <p>X_Plane이라는 시뮬레이션을 실감 적으로 컨트롤 하고 싶어 라디오통신부 분을 회로, 프로그램을 제작을 했습니다.<br>추가내용 준비중입니다.</p>
+                                    <p>X_Plane이라는 시뮬레이션을 실감 적으로 컨트롤하고 싶어 라디오통신부분을 회로, 프로그램을 제작했습니다.
+                                        <br>시뮬레이션에서 UDP을 python으로 읽고 분석한 데이터는 항공기의 라디오 주파수 데이터이고 시프트 레지스터를 통해 7세그먼트로표시합니다.
+                                        <br>로터리 인코더로 회전수를 읽어 주파수를 조정 뒤 UDP로 시뮬레이션프로그램으로 전달합니다.
+                                        <br>7세그먼트가 5개가 있는 것은 라디오제어 부분이고 3개가 있는 것은 항공기의 속도 및 계기의 방향(Heading)을 표시, 제어합니다.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>사용한 툴:</strong>
-                                            OrCad, python
+                                            OrCad, python, Inventor
                                         </li>
                                         <li>
                                             <strong>사용 환경:</strong>
@@ -294,7 +297,9 @@
                                     <h2 class="text-uppercase">Simulator</h2>
                                     <p class="item-intro text-muted">지인의 회사에서 외주를 받아서 제어 프로그램 제작하였습니다.<br>추가내용 준비중입니다.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/simulator.jpg" alt="..." />
-                                    <p>"<a href="https://www.google.com/search?q=yaw+vr&client=safari&bih=945&biw=1792&hl=ko&sxsrf=AOaemvLP9oSJtgjodi5iOnJxE4KiOC94jQ:1631319405130&source=lnms&tbm=isch&sa=X&ved=2ahUKEwicmqGt0vXyAhXh-GEKHd7UAjoQ_AUoAXoECAIQAw">yaw vr</a>" 콤팩트 모션 시뮬레이터와 같은 형식의 시뮬레이터프로젝트를 외주를 받아 PC 제어 프로그램 부분을 코딩을 하여 다양한 게임데이터 추출과 3축 모터 제어를 합니다.</p>
+                                    <p>"<a href="https://www.google.com/search?q=yaw+vr&client=safari&bih=945&biw=1792&hl=ko&sxsrf=AOaemvLP9oSJtgjodi5iOnJxE4KiOC94jQ:1631319405130&source=lnms&tbm=isch&sa=X&ved=2ahUKEwicmqGt0vXyAhXh-GEKHd7UAjoQ_AUoAXoECAIQAw">yaw vr</a>"
+                                         콤팩트 모션 시뮬레이터와 같은 형식의 시뮬레이터 프로젝트를 받아서 PC 제어 프로그램 부분을 코딩을 하여 다양한 게임데이터 추출과 3축 모터 제어를 합니다.
+                                        <br>시뮬레이터 상부인 반구에있는 IMU를 통해 자세를 읽고 하부에 120도 마다 있는 3개의 모터를 통해 반구를 제어하는 프로그램을 제작하였고 시뮬레이터 프로그램에서 UDP데이터를 읽어 시뮬레이터에 유저의 G포스값을 추출해 제어합니다.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>사용툴 :</strong>
@@ -364,7 +369,8 @@
                                     <p class="item-intro text-muted">3D print로 만든 모터</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Motor_1.jpg" alt="..." />
                                     <video width="600px" height="450px" src="assets/video/Motor_video.mp4" controls></video>
-                                    <p>구리를 제외한 모든 부분은 3D 프린터로 출력을 하여 제작했으며 코일은 14줄씩 3층 3상 연결로 제작하였습니다.<br>추가내용 준비중입니다.</p>
+                                    <p>구리를 제외한 모든 부분은 3D 프린터로 출력을 하여 제작했으며 코일은 14줄씩 3층 3상 연결로 제작하였습니다.
+                                        <br>구리가 실내장식 구리여서여서 열이 발생하였으나 모터 상부에 프로펠러 형식의의 바람구멍을 통해 많은 바람을 밀어 넣었습니다</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
                                         Close Project
@@ -388,7 +394,8 @@
                                     <h2 class="text-uppercase">Ambient Light</h2>
                                     <p class="item-intro text-muted">아두이노 및 python으로  만들었습니다.<br>추가내용 준비중입니다.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ambient_light.jpg" alt="..." />
-                                    <p>모니터 뒤에 RGB LED바 를 설치하였습니다. Python win32API를 활용하여 모니터 스크린을 읽고 opencv로 모니터 뒤에 있는 LED바 위치에 해당하는 구역을 분석 후 Serial통신으로 아두이노가 LED바를 제어합니다.</p>
+                                    <p>모니터 뒤에 RGB LED바 를 설치하였습니다. Python win32API를 활용하여 모니터 스크린을 읽고 opencv로 모니터 뒤에 있는 LED바 위치에 해당하는 구역을 분석 후 Serial통신으로 아두이노가 LED바를 제어합니다.
+                                        <br>현제 윈도우에서 화면읽는 프레임은 약 25FPS가 나오고있습니다. 더나은 프레임 확보를 위해 c++로 시도를 하고있습니다.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>사용툴 :</strong>
